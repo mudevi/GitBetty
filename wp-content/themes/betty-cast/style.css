@@ -1,0 +1,267 @@
+/*
+Theme Name: Betty Casting
+Description: Child theme for the Twenty Thirteen theme
+Authors: Tomas Hartl, Amy Burrows
+Template: twentythirteen
+Version: 1.0
+*/
+
+@import "../twentythirteen/style.css";
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Lobster, Georgia, serif;
+}
+h1.entry-title {
+	display: none;
+}
+h2.site-description {
+	color: beige;
+	margin-top: .5rem;
+	font-size: 30px;
+	font-family: Lobster, Georgia, serif;
+	font-style: normal;
+}
+.page .entry-content {
+	  word-wrap: normal;
+	  overflow-wrap:normal;
+	  -webkit-hyphens: none;
+	  -moz-hyphens: none;
+	   hyphens: none;
+}
+.entry-content a {
+	color: #851311;
+}
+.site-title {
+	font-size: 80px;
+	font-weight: normal;
+}
+/*body .site-header .site-title:hover {
+	padding-top: 40px;
+}*/
+#masthead {
+	background-image: none;
+	background-color: black;
+	height: 250px;
+}
+#masthead h1{
+	color: #851311;
+	text-align: center;
+}
+#masthead h2 {
+	font-weight: 400;
+	text-align: center;
+}
+body #content.site-content {
+	background: beige;
+	background: url("http://searchingforbetty.com/wp-content/uploads/2015/08/leather_2.png") fixed;
+	color: #000;
+}
+img {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+body .site-header .site-title:hover {
+  	text-decoration: none;
+}
+.dots {
+	font-size: 50px;
+	line-height: .5rem;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+#content .entry-content {
+	padding: 0px;
+}
+article#post-2 {
+	padding-bottom: 0px;
+}
+section.text-content {
+	background: url('http://betty.wpengine.com/wp-content/uploads/2015/08/binding_dark.png') repeat fixed;
+	margin-top: 20px;
+	color: beige;
+	background: none;
+	color: black;
+	text-align: center;
+}
+.dreamgroup {
+	display: block;
+	position: relative;
+	clear: left;
+}
+.dream {
+	display: block;
+	margin: 30px auto 70px;
+	width: 90%;
+	height: 300px;
+	background: url('http://searchingforbetty.com/wp-content/uploads/2015/08/redcar2.jpg') no-repeat right;
+	border-radius: 100px;
+	border: 10px solid black;
+}
+.bubble1,
+.bubble2,
+.bubble3 {
+	position: absolute;
+	background: url('http://searchingforbetty.com/wp-content/uploads/2015/08/redcar2.jpg') no-repeat;
+	border-radius: 100%;
+	float: right;
+}
+.bubble1 {
+	width: 50px;
+	height: 50px;
+	border: 7px solid black;
+	margin: 10px;
+	margin-left: 50px;
+	top: 310px;
+	right: 100px;
+}
+.bubble2 {
+	width: 30px;
+	height: 30px;
+	border: 7px solid black;
+	margin: 10px;
+	margin-left: 50px;
+	top: 383px;
+	right: 108px;
+}
+.bubble3 {
+	width: 20px;
+	height: 20px;
+	border: 5px solid black;
+	margin: 10px;
+	margin-left: 50px;
+	top: 430px;
+	right: 140px;
+}
+span.call {
+	color: #851311;
+	font-family: Lobster, serif;
+	font-size: 40px;
+	display: block;
+	text-align: center;
+}
+span.pitch {
+	color: #851311;
+	font-family: Lobster, serif;
+	font-size: 30px;
+	display: block;
+	margin: 6px 0;
+}
+.qualities {
+	text-align: center;
+}
+strong a {
+	display: block;
+	margin-top: 10px;
+}
+
+/***Footer*-------------------*/
+
+#colophon {
+	background-color: #000;
+	color: beige;
+}
+#colophon a {
+	color: beige;
+	text-decoration: none;
+}
+#colophon a:hover {
+	color: #ea9629;
+}
+.site-info {
+	padding: 60px 0 30px;
+}
+
+.middot {
+	display: inline;
+}
+
+.creds-break {
+	display: none;
+}
+
+
+/*** Media Queries* ------------------------------ */
+@media (max-width: 767px) {
+ 	.site-title {
+ 		font-size: 70px;
+ 		padding-top: 38px;
+ 	}
+ 	.text-content {
+		padding: 50px;
+	}
+	#masthead {
+		height: 220px;
+	}
+	.dream {
+		border-radius: 70px;
+	}
+}
+@media (max-width: 643px) {
+	 	img {
+	 		width: 400px;
+	 	}
+}
+@media (max-width: 643px) {
+	.site-title {
+		font-size: 50px;
+	}
+}
+@media (max-width: 550px) {
+	.bubble1 {
+		right: 20px;
+	}
+	.bubble2 {
+		right: 25px;
+	}
+	.bubble3 {
+		right: 50px;
+	}
+	.dreamgroup {
+		width: 85%;
+		margin: 0 auto;
+	}
+	img {
+		width: 400px;
+		margin: 30px auto 0px;
+	}
+	section.text-content {
+		margin-top: -30px;
+	}
+	body .site-header .site-title {
+		padding: 38px 20px 10px;
+	}
+	body .site-header .site-title:hover {
+		padding: 38px 20px 10px;
+	}
+}
+@media (max-width: 400px) {
+	img {
+		margin-top: 120px;
+	}
+	body .site-header .site-title {
+		padding: 18px 20px 10px;
+	}
+	body .site-header .site-title:hover {
+		padding: 18px 20px 10px;
+	}
+}
+@media (max-width: 359px) {
+	h2.site-description {
+		position: relative;
+		text-align: center;
+	}
+	img {
+		margin-top: 140px;
+	}
+	section.text-content {
+		padding: 10px;
+	}
+}
